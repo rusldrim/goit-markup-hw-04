@@ -142,11 +142,11 @@ img {
     text-decoration: none;
 }
 
-.envelope-icon {
+.contacts-icon {
     padding: 0;
     border: none;
     color: var(--text-color);
-    background-color: teal;
+    /* background-color: teal; */
     
 }
 
