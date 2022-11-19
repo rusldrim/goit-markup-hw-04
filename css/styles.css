@@ -37,6 +37,7 @@ header {
     --border-color: #EEEEEE;
     --border-header-color: #ECECEC;
     --card-set-gap: 30px;
+    --hat-background-color: #C4C4C4;
 }
 
 img {
@@ -121,6 +122,7 @@ img {
 .contacts {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .contacts .c-item+.c-item {
     margin-left: 50px;
@@ -140,15 +142,35 @@ img {
     text-decoration: none;
 }
 
+.envelope-icon {
+    padding: 0;
+    border: none;
+    color: var(--text-color);
+    background-color: teal;
+    
+}
+
 /* MAIN */
 /* ШАПКА */
+
 .hat {
+    max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/team.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     
     text-align: center; 
 
-    background-color: var(--secondary-background-color);
+    background-color: var(--hat-background-color);
 }
 .hat-title {
     
