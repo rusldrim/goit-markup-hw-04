@@ -38,6 +38,7 @@ header {
     --border-header-color: #ECECEC;
     --card-set-gap: 30px;
     --hat-background-color: #C4C4C4;
+    --cust-border-color: #AFB1B8;
 }
 
 img {
@@ -52,7 +53,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 
 /* HEADER-ЗАГОЛОВОК */
@@ -345,6 +346,56 @@ img {
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;   
+}
+/* Постійні клієнти */
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+.cust {
+    width: calc((100% - 5 * 30px) / 6);
+}
+
+.client .cust+.cust {
+    margin-left: 30px;
+}
+
+.cust-icon {
+    padding: 0;
+    margin: 16px 32px;
+    border: none;
+    color: var(--text-color);
+    /* background-color: teal; */
+    
+
+}
+
+.cust {
+   
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--cust-border-color);
+    border-radius: 4px;
+
+}
+
+.cust-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* ПОРТФОЛІО */
