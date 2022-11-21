@@ -373,6 +373,18 @@ img {
     display: block;
     padding: 12px;
     text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    fill: var(--cust-border-color);
+}
+
+.s-box:hover,
+.s-box:focus {
+    background-color:  var(--accent-color);
+    fill: var(--hat-text-color);
+}
+.s-icon:hover {
+    fill: var(--hat-text-color);
 }
 
 .t-link {
@@ -401,19 +413,7 @@ img {
 
 .cust-item {
     width: calc((100% - 5 * 30px) / 6);
-}
-
-.cust-icon {
-    padding: 0;
-    margin: 0;
-    border: none;
-    cursor: pointer;
-
-    fill: var(--cust-border-color);    
-}
-.cust-icon:hover,
-.cust-icon:focus {
-    fill: var(--accent-color);
+    
 }
 
 
@@ -422,8 +422,7 @@ img {
     border: 1px solid var(--cust-border-color);
     border-radius: 4px;
     padding: 16px 32px;
-    cursor: pointer;
-    background-color: var(--hat-text-color);
+        
     min-width: 170px;
     height: 92px;
 }
@@ -431,8 +430,21 @@ img {
 .cust:hover,
 .cust:focus {
     border: 1px solid var(--accent-color);
-}
     
+}
+
+.cust-icon {
+          
+    fill: var(--cust-border-color);
+}
+
+.cust-icon:hover,
+.cust-icon:focus {
+    fill: var(--accent-color);
+    
+}
+
+ 
 
 .cust-title {
     margin-top: 0;
