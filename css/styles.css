@@ -243,7 +243,27 @@ img {
 .features .item+.item {
     margin-left: 30px;
 }
+.pic {
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background-color);
+    text-align: center;
+    padding: 25px 100px;
+    margin: 0;  
+}
 
+.icons {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.i-item+.i-item {
+    margin-left: 30px;
+}
+
+.i-item {
+    width: calc((100% - 3 * 30px) / 4);
+}
 .features-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -327,7 +347,7 @@ img {
 }
 .team-text {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     color: var(--text-color);
     background-color: var(--hat-text-color);
@@ -347,6 +367,23 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;   
 }
+/* Соціальні мережі */
+
+.s-box {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.t-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t-link .s-box+.s-box {
+    margin-left: 10px;
+}
+
 /* Постійні клієнти */
 .customers {
     padding-top: 94px;
@@ -356,35 +393,46 @@ img {
 .client {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-
 }
-.cust {
+
+.client .cust-item+.cust-item {
+    margin-left: 30px;    
+}
+
+.cust-item {
     width: calc((100% - 5 * 30px) / 6);
-}
-
-.client .cust+.cust {
-    margin-left: 30px;
 }
 
 .cust-icon {
     padding: 0;
-    margin: 16px 32px;
+    margin: 0;
     border: none;
-    color: var(--text-color);
-    /* background-color: teal; */
-    
+    cursor: pointer;
 
+    fill: var(--cust-border-color);    
 }
+.cust-icon:hover,
+.cust-icon:focus {
+    fill: var(--accent-color);
+}
+
 
 .cust {
-   
-    width: 170px;
-    height: 92px;
+    display: block;
     border: 1px solid var(--cust-border-color);
     border-radius: 4px;
-
+    padding: 16px 32px;
+    cursor: pointer;
+    background-color: var(--hat-text-color);
+    min-width: 170px;
+    height: 92px;
 }
+
+.cust:hover,
+.cust:focus {
+    border: 1px solid var(--accent-color);
+}
+    
 
 .cust-title {
     margin-top: 0;
@@ -590,3 +638,4 @@ img {
 /* section, header, footer {  */
     /* outline: 2px solid blue;  */
 /* }  */
+
