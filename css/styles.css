@@ -123,9 +123,9 @@ img {
 .contacts {
     display: flex;
     margin-left: auto;
-    align-items: center;
+    /* align-items: center; */
 }
-.contacts .c-item+.c-item {
+.contacts .c-item + .c-item {
     margin-left: 50px;
 }
 
@@ -143,12 +143,21 @@ img {
     text-decoration: none;
 }
 
-.contacts-icon {
-    padding: 0;
-    border: none;
-    color: var(--text-color);
-    /* background-color: teal; */
-    
+.pictures {
+    display: flex;
+    align-items: center;
+}
+
+.pictures-icon {
+    margin-right: 10px;
+
+    fill: var(--text-color);
+}
+
+.pictures-icon:hover,
+.pictures-icon:focus {
+    fill: var(--accent-color);
+
 }
 
 /* MAIN */
@@ -371,7 +380,9 @@ img {
 
 .s-box {
     display: block;
-    padding: 12px;
+    padding: 12px 12px;
+    width: 44px;
+    height: 44px;
     text-decoration: none;
     border: none;
     border-radius: 50%;
@@ -592,14 +603,18 @@ img {
 
 /* ПІДВАЛ */
 
+/* ПІДВАЛ */
+
 .bg {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-background-color);
 }
+
 .bg-logo {
     display: block;
     margin-bottom: 20px;
+    padding: 0;
 
     color: var(--accent-color);
 
@@ -616,15 +631,15 @@ img {
 }
 
 .bg-title {
-    margin-top: 0;
-    margin-bottom: 9px;
+    margin: 0;
+    padding: 0;
 
     color: var(--address-color);
 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style: normal; 
+    font-style: normal;
 }
 
 .bg-link {
@@ -643,11 +658,74 @@ img {
     color: var(--accent-color);
 }
 
-.a-mail {
-    margin-bottom: 9px;
+
+.j-text {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--hat-text-color);
 }
 
-/* section, header, footer {  */
-    /* outline: 2px solid blue;  */
-/* }  */
+.j {
+    display: flex;
+    align-items: center;
+}
 
+.j>.j-item+.j-item {
+    margin-left: 10px;
+}
+
+.j-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px 12px;
+
+}
+
+.j-link:hover,
+.j-link:focus {
+    background-color: var(--accent-color);
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+}
+
+.con-item {
+    padding: 0;
+    margin-bottom: 9px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ad {
+    display: flex;
+    align-items: baseline;
+}
+
+.ad-item {
+    margin-right: 70px;
+
+}
+
+.ad-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+section,
+header,
+footer {
+    outline: 2px solid blue;
+}
