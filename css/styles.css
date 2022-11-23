@@ -53,7 +53,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* HEADER-ЗАГОЛОВОК */
@@ -734,8 +734,8 @@ img {
     margin-bottom: 0;
 }
 
-section,
-header,
-footer {
-    outline: 2px solid blue;
-}
+/* section, */
+/* header, */
+/* footer { */
+    /* outline: 2px solid blue; */
+/* } */
