@@ -130,7 +130,8 @@ img {
 }
 
 .contacts .link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -151,21 +152,15 @@ img {
 .pictures-icon {
     margin-right: 10px;
 
-    fill: var(--text-color);
+    fill: currentColor;
 }
 
-.pictures-icon:hover,
-.pictures-icon:focus {
-    fill: var(--accent-color);
-
-}
 
 /* MAIN */
 /* ШАПКА */
 
 .hat {
     max-width: 1600px;
-        height: 600px;
         margin-left: auto;
         margin-right: auto;
         background-image: linear-gradient(to right,
@@ -205,6 +200,7 @@ img {
     padding: 10px 32px;
     min-width: 216px;
     border: none;
+    border-radius: 4px;
 
     color: var(--hat-text-color);
     background-color: var(--accent-color);
@@ -253,17 +249,13 @@ img {
     margin-left: 30px;
 }
 .pic {
-    width: 270px;
-    height: 120px;
-    background-color: var(--team-background-color);
-    text-align: center;
-    padding: 25px 100px;
-    margin: 0;  
-}
-
-.icons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+    height: 120px;
+
+    background-color: var(--team-background-color);     
 }
 
 .i-item+.i-item {
@@ -382,8 +374,9 @@ img {
 /* Соціальні мережі */
 
 .s-box {
-    display: block;
-    padding: 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
     width: 44px;
     height: 44px;
     text-decoration: none;
@@ -432,33 +425,22 @@ img {
 
 
 .cust {
-    display: block;
-    border: 1px solid var(--cust-border-color);
-    border-radius: 4px;
-    padding: 16px 32px;
-        
-    min-width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;           
     height: 92px;
+
+    border: 1px solid var(--cust-border-color);
+    fill: var(--cust-border-color);
 }
 
 .cust:hover,
 .cust:focus {
     border: 1px solid var(--accent-color);
-    
-}
-
-.cust-icon {
-          
-    fill: var(--cust-border-color);
-}
-
-.cust-icon:hover,
-.cust-icon:focus {
     fill: var(--accent-color);
     
 }
-
- 
 
 .cust-title {
     margin-top: 0;
@@ -499,11 +481,6 @@ img {
 
 .filters .filter-item+.filter-item {
     margin-left: 8px;
-}
-
-.filter-item:hover,
-.filter-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .all {
@@ -550,6 +527,7 @@ img {
 .btn:focus {
     color: var(--hat-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Розділи */
@@ -569,13 +547,6 @@ img {
     flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);       
 }
 
-.pr-item:hover {
-    
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
-}
-
-
 .card-conten {
     padding: 20px 24px;
     background: var(--hat-text-color);
@@ -585,9 +556,14 @@ img {
 }
 
 .project-link {
+    display: block;
     color: var(--primary-text-color);
 
     text-decoration: none;
+}
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
@@ -669,7 +645,7 @@ img {
 }
 
 
-.j-text {
+.social-text {
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
@@ -684,26 +660,27 @@ img {
     color: var(--hat-text-color);
 }
 
-.j {
+.join {
     display: flex;
     align-items: center;
 }
 
-.j>.j-item+.j-item {
+.join>.join-item+.join-item {
     margin-left: 10px;
 }
 
-.j-link {
-    display: block;
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    padding: 12px 12px;
-
+    border-radius: 50%;  
 }
 
-.j-link:hover,
-.j-link:focus {
+.join-link:hover,
+.join-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -719,20 +696,16 @@ img {
     margin-right: 0;
 }
 
-.ad {
+.address-box {
     display: flex;
     align-items: baseline;
 }
 
-.ad-item {
+.address-item {
     margin-right: 70px;
 
 }
 
-.ad-item:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
-}
 
 /* section, */
 /* header, */
