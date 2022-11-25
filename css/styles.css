@@ -39,6 +39,7 @@ header {
     --card-set-gap: 30px;
     --hat-background-color: #C4C4C4;
     --cust-border-color: #AFB1B8;
+    --social-background-color: rgba(255, 255, 255, 0.1);
 }
 
 img {
@@ -398,6 +399,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 .t-link .s-box+.s-box {
     margin-left: 10px;
@@ -673,6 +675,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--social-background-color);
 
     width: 44px;
     height: 44px;
